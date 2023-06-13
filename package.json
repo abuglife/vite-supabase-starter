@@ -1,0 +1,16 @@
+{
+  "name": "vite-supabase-starter",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start:all": "concurrently \"yarn start:web\"",
+    "start:web": "yarn workspace web dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
